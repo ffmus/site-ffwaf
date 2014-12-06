@@ -14,18 +14,24 @@ git tag
 git checkout tags/v2014.3.1
 
 
-make GLUON_RELEASE=0.5.1-beta$(date '+%Y%m%d') GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf GLUON_BRANCH=beta update
-make GLUON_RELEASE=0.5.1-beta$(date '+%Y%m%d') GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf GLUON_BRANCH=beta
-make GLUON_RELEASE=0.5.1-beta$(date '+%Y%m%d') GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf GLUON_BRANCH=beta manifest
-contrib/sign.sh ../secret images/sysupgrade/beta.manifest
+export GLUON_BRANCH=stable
+export GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf
+export GLUON_RELEASE=2014.3.1-2
+
+make update
+make clean
+make -j5
+make manifest
+contrib/sign.sh ../secret images/sysupgrade/${GLUON_BRANCH}.manifest
 
 Auf dem Server bringen:
 
 Auf dem Server:
 
-( cd /var/www/images/beta && rm -rf * )
+export GLUON_BRANCH=stable
+( cd /var/www/images/${GLUON_BRANCH} && rm -rf * )
 
 Dann:
 
-( cd images && scp -r . <server>:/var/www/images/beta )
+( cd images && scp -r . <server>:/var/www/images/${GLUON_BRANCH} )
 

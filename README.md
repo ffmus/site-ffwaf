@@ -18,7 +18,7 @@ git checkout tags/v2014.3.1
 
 Dann bauen:
 ```
-export GLUON_BRANCH=stable
+export GLUON_BRANCH=experimental
 export GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf
 export GLUON_RELEASE=2014.3.1-2
 
@@ -36,10 +36,11 @@ contrib/sign.sh ../secret images/sysupgrade/${GLUON_BRANCH}.manifest
 Auf dem Server bringen:
 
 Auf dem Server:
-
+```
 export GLUON_BRANCH=stable
 ( cd /var/www/images/${GLUON_BRANCH} && rm -rf * )
-
+```
 Dann:
-
+```
 ( cd images && scp -r . images.freifunk-muensterland.net:/var/www/images/${GLUON_BRANCH} )
+```

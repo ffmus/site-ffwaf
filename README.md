@@ -36,10 +36,11 @@ contrib/sign.sh ../secret images/sysupgrade/${GLUON_BRANCH}.manifest
 Auf dem Server bringen:
 
 Auf dem Server:
-
+```
 export GLUON_BRANCH=stable
 ( cd /var/www/images/${GLUON_BRANCH} && rm -rf * )
-
-Dann:
-
-( cd images && scp -r . images.freifunk-muensterland.net:/var/www/images/${GLUON_BRANCH} )
+```
+Dann auf dem Build Host:
+```
+( cd images && rsync -rv --del . images.freifunk-muensterland.net:/var/www/images/${GLUON_BRANCH} )
+```

@@ -10,17 +10,18 @@ Letzter erfolgreicher Build ging so:
 
 Zunächst gloun holen:
 ```
-git clone https://github.com/freifunk-gluon/gluon
-cd gluon
-git tag
+git clone https://github.com/freifunk-gluon/gluon gluon-beta
+cd gluon-beta
 git checkout tags/v2014.3.1
 ```
 
 Dann bauen:
 ```
-export GLUON_BRANCH=stable
+export GLUON_BRANCH=beta
 export GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf
-export GLUON_RELEASE=2014.3.1-2
+export GLUON_RELEASE=2014.3.1-3beta
+
+cp -av ${GLUON_SITEDIR}/patches .
 
 make update
 make clean
@@ -35,12 +36,6 @@ contrib/sign.sh ../secret images/sysupgrade/${GLUON_BRANCH}.manifest
 
 Auf dem Server bringen:
 
-Auf dem Server:
-```
-export GLUON_BRANCH=stable
-( cd /var/www/images/${GLUON_BRANCH} && rm -rf * )
-```
-Dann auf dem Build Host:
 ```
 ( cd images && rsync -rv --del . images.freifunk-muensterland.net:/var/www/images/${GLUON_BRANCH} )
 ```

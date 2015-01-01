@@ -4,7 +4,7 @@ Community zu bauen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
 
-Siehe auch: http://gluon.readthedocs.org/en/v2014.3.1/index.html
+Siehe auch: http://gluon.readthedocs.org/en/v2014.4/index.html
 
 Letzter erfolgreicher Build ging so:
 
@@ -12,16 +12,14 @@ Zunächst gloun holen:
 ```
 git clone https://github.com/freifunk-gluon/gluon gluon-beta
 cd gluon-beta
-git checkout tags/v2014.3.1
+git checkout tags/v2014.4
 ```
 
 Dann bauen:
 ```
 export GLUON_BRANCH=beta
-export GLUON_SITEDIR=~/git/freifunk-gluon/site-ffwaf
-export GLUON_RELEASE=2014.3.1-3beta
-
-cp -av ${GLUON_SITEDIR}/patches .
+export GLUON_SITEDIR=~/git/freifunk/site-ffwaf
+export GLUON_RELEASE=2014.4-1beta
 
 make update
 make clean

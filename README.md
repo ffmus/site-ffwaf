@@ -1,5 +1,5 @@
 
-site.conf und site.mk um die Firmware für Freifunk-Knoten der Muensterland-
+site.conf und site.mk um die Firmware für Freifunk-Knoten der Warendorfer
 Community zu bauen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
@@ -19,7 +19,6 @@ Dann bauen:
 ```
 export GLUON_BRANCH=stable
 export GLUON_SITEDIR=~/git/freifunk/site-ffwaf
-export GLUON_RELEASE=2014.4-2
 
 make update
 make clean

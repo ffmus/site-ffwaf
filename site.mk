@@ -1,32 +1,33 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-14 \
-        gluon-alfred \
-        gluon-announced \
+	gluon-alfred \
+	gluon-announced \
 	gluon-neighbour-info \
-        gluon-autoupdater \
-	gluon-config-mode-hostname \
+	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
+	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
-        gluon-ebtables-filter-multicast \
-        gluon-ebtables-filter-ra-dhcp \
-        gluon-luci-admin \
-        gluon-luci-autoupdater \
-        gluon-luci-portconfig \
+	gluon-ebtables-filter-multicast \
+	gluon-ebtables-filter-ra-dhcp \
+	gluon-luci-admin \
+	gluon-luci-autoupdater \
+	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
-        gluon-next-node \
-        gluon-mesh-vpn-fastd \
-        gluon-radvd \
-        gluon-status-page \
-        iwinfo \
-        iptables \
-        haveged
+	gluon-next-node \
+	gluon-mesh-vpn-fastd \
+	gluon-radvd \
+	gluon-status-page \
+	iwinfo \
+	iptables \
+	haveged
 
 
-DEFAULT_GLUON_RELEASE := 2014.4-2.1exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2014.4-4.1exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_PRIORITY := 3
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+GLUON_PRIORITY ?= $(DEFAULT_GLUON_PRIORITY)
 
-GLUON_PRIORITY ?= 0

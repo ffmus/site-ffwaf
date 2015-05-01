@@ -25,7 +25,7 @@ GLUON_SITE_PACKAGES := \
 	haveged
 
 
-DEFAULT_GLUON_RELEASE := 2014.4-5.1beta$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2014.4-5.2beta$(shell date '+%Y%m%d')
 DEFAULT_GLUON_PRIORITY := 3
 
 # Allow overriding the release number from the command line

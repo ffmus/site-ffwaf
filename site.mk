@@ -4,8 +4,9 @@ GLUON_SITE_PACKAGES := \
 	gluon-announced \
 	gluon-neighbour-info \
 	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
+	gluon-config-mode-core \
 	gluon-config-mode-hostname \
+	gluon-config-mode-autoupdater \
 	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
@@ -24,7 +25,7 @@ GLUON_SITE_PACKAGES := \
 	haveged
 
 
-DEFAULT_GLUON_RELEASE := 2014.4-4.2beta$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2014.4-5.1beta$(shell date '+%Y%m%d')
 DEFAULT_GLUON_PRIORITY := 3
 
 # Allow overriding the release number from the command line

@@ -18,7 +18,7 @@ git checkout tags/v2014.4
 Dann bauen:
 ```
 export GLUON_BRANCH=stable
-export GLUON_SITEDIR=~/git/freifunk/site-ffwaf
+export GLUON_SITEDIR=~/git/freifunk/ffmus/site-ffwaf
 
 make update
 make clean

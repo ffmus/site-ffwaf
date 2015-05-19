@@ -31,7 +31,6 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	\
 	gluon-neighbour-info \
-	gluon-luci-mesh-vpn-fastd \
 	gluon-luci-private-wifi
 
 ##	DEFAULT_GLUON_RELEASE
@@ -59,8 +58,8 @@ DEFAULT_GLUON_PRIORITY := 3
 GLUON_PRIORITY ?= $(DEFAULT_GLUON_PRIORITY)
 
 
-DEFAULT_GLUON_TARGET := ar71xx-generic
-GLUON_TRAGET ?= $(DEFAULT_GLUON_TARGET)
+#DEFAULT_GLUON_TARGET := ar71xx-generic
+#GLUON_TARGET ?= $(DEFAULT_GLUON_TARGET)
 
 # Languages to include
 GLUON_LANGS ?= en de

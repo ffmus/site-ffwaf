@@ -12,7 +12,9 @@ Zunächst gloun holen:
 ```
 git clone https://github.com/freifunk-gluon/gluon gluon-stable
 cd gluon-stable
-git checkout tags/v2014.4
+git checkout master
+git pull
+git checkout tags/v2015.1
 ```
 
 Dann bauen:
@@ -21,8 +23,8 @@ export GLUON_BRANCH=stable
 export GLUON_SITEDIR=~/git/freifunk/ffmus/site-ffwaf
 
 make update
-make clean
-make -j5
+make clean GLUON_TARGET=ar71xx-generic
+make -j5 GLUON_TARGET=ar71xx-generic
 ```
 
 Jetzt noch die Images veröffentlichen:

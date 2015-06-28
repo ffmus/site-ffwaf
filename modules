@@ -21,3 +21,8 @@
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 
+GLUON_SITE_FEEDS='ffpb'
+
+PACKAGES_FFPB_REPO=http://git.c3pb.de/freifunk-pb/ffpb-packages.git
+PACKAGES_FFPB_COMMIT=2b92e12de39cf0bbc6726e81ab84144177adca3d
+

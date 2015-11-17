@@ -5,7 +5,7 @@
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-14 \
+	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
 	gluon-announced \
 	gluon-autoupdater \
@@ -20,6 +20,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-admin \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
+	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
@@ -30,9 +31,10 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	\
+	gluon-migrate-vpn \
+	\
 	gluon-neighbour-info \
-	gluon-luci-private-wifi\
-	ffpb-ebtables-net-rules
+	gluon-luci-private-wifi
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -40,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2015.1.1-2.1exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2015.1.2-1.0exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE

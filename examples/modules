@@ -20,7 +20,3 @@
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
-GLUON_SITE_FEEDS='ffrl'
-
-PACKAGES_FFRL_REPO=https://github.com/ffmus/ffrl-packages.git
-PACKAGES_FFRL_COMMIT=879e0f21c9c93d373d9515e6b01a3b1ca10d8a84

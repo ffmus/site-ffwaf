@@ -22,5 +22,5 @@
 #PACKAGES_MY_OWN_PACKAGES_BRANCH=my_branch
 GLUON_SITE_FEEDS='ffrl'
 
-PACKAGES_FFRL_REPO=https://github.com/ffmus/ffrl-packages.git
-PACKAGES_FFRL_COMMIT=879e0f21c9c93d373d9515e6b01a3b1ca10d8a84
+PACKAGES_FFRL_REPO=https://github.com/ffrl/ffrl-packages.git
+PACKAGES_FFRL_COMMIT=0a8b47f6dbc175e61eb40a9a22b628a412b61599

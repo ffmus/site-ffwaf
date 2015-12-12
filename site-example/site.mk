@@ -1,4 +1,4 @@
-##	gluon site.mk makefile -- ffwaf
+##	gluon site.mk makefile example
 
 ##	GLUON_SITE_PACKAGES
 #		specify gluon/openwrt packages to include here
@@ -28,14 +28,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	haveged \
 	iptables \
-	iwinfo \
-	\
-	gluon-migrate-vpn \
-	\
-	gluon-luci-portconfig \
-	gluon-luci-private-wifi \
-	\
-	gluon-migrate-vpn \
+	iwinfo
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -43,7 +36,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2015.1.2-3.0exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE
@@ -57,8 +50,7 @@ DEFAULT_GLUON_RELEASE := 2015.1.2-3.0exp$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
-DEFAULT_GLUON_PRIORITY := 3
-GLUON_PRIORITY ?= $(DEFAULT_GLUON_PRIORITY)
+GLUON_PRIORITY ?= 0
 
 # Languages to include
 GLUON_LANGS ?= en de

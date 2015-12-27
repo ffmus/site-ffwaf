@@ -26,6 +26,13 @@ export GLUON_BRANCH=latest
 export GLUON_SITEDIR=~/git/freifunk/ffmus/site-ffwaf
 
 make update
+make GLUON_TARGET=ar71xx-generic
+```
+
+Nach Änderungen im site.mk/site.conf etc. ist dann jeweils folgendes
+auszuführen:
+
+```
 make clean GLUON_TARGET=ar71xx-generic
 make -j5 GLUON_TARGET=ar71xx-generic
 ```
@@ -40,4 +47,12 @@ Auf dem Server bringen:
 
 ```
 ( cd output/images && rsync -rav --del . images.freifunk-muensterland.net:/var/www/images/${GLUON_BRANCH} )
+( cd output/modules && rsync -rav . images.freifunk-muensterland.net:/var/www/images/modules )
+```
+
+Für einen lokalen mirror (openwrt bietet das nicht in ipv6 an) etwa folgendes
+ausführen (Muss man nur einmal machen):
+
+```
+wget -N -r -l inf -p -np -k https://downloads.openwrt.org/chaos_calmer/15.05/ar71xx/generic/packages/
 ```

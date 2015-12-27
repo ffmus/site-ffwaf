@@ -8,6 +8,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
 	gluon-announced \
+	gluon-neighbour-info \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
@@ -30,8 +31,6 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	\
-	gluon-migrate-vpn \
-	\
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
@@ -43,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2015.1.2-3.0exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2015.2-0.0exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE

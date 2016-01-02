@@ -30,12 +30,11 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	\
-	gluon-migrate-vpn \
-	\
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
 	gluon-migrate-vpn \
+	gluon-switch2beta \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images

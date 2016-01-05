@@ -10,8 +10,8 @@ Letzter erfolgreicher Build ging so:
 
 Zunächst gloun holen:
 ```
-git clone https://github.com/freifunk-gluon/gluon gluon-beta
-cd gluon-beta
+git clone https://github.com/freifunk-gluon/gluon gluon-stable
+cd gluon-stable
 git checkout master
 git pull
 git checkout tags/v2015.1.2
@@ -19,7 +19,7 @@ git checkout tags/v2015.1.2
 
 Dann bauen:
 ```
-export GLUON_BRANCH=beta
+export GLUON_BRANCH=stable
 export GLUON_SITEDIR=~/git/freifunk/ffmus/site-ffwaf
 
 make update

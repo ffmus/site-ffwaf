@@ -34,6 +34,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	\
 	gluon-migrate-vpn \
+	gluon-switch2stable \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -55,7 +56,7 @@ DEFAULT_GLUON_RELEASE := 2015.1.2-3.1beta$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
-DEFAULT_GLUON_PRIORITY := 3
+DEFAULT_GLUON_PRIORITY := 0
 GLUON_PRIORITY ?= $(DEFAULT_GLUON_PRIORITY)
 
 # Languages to include

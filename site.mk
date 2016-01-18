@@ -15,7 +15,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-core \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
-	gluon-config-mode-tunneldigger \
+	gluon-config-mode-mesh-vpn \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-luci-admin \
@@ -23,7 +23,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-portconfig \
 	gluon-luci-wifi-config \
 	gluon-next-node \
-	gluon-mesh-vpn-tunneldigger \
+	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
@@ -35,6 +35,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	\
 	gluon-migrate-vpn \
+	\
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -42,7 +43,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2015.2-0.1exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2015.2-0.2exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE
@@ -56,7 +57,7 @@ DEFAULT_GLUON_RELEASE := 2015.2-0.1exp$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
-DEFAULT_GLUON_PRIORITY := 3
+DEFAULT_GLUON_PRIORITY := 0
 GLUON_PRIORITY ?= $(DEFAULT_GLUON_PRIORITY)
 
 # Languages to include

@@ -19,7 +19,7 @@ git checkout tags/v2015.1.2
 
 Dann bauen:
 ```
-export GLUON_BRANCH=experimental
+export GLUON_BRANCH=l2tpexp
 export GLUON_SITEDIR=~/git/freifunk/ffmus/site-ffwaf
 
 make update

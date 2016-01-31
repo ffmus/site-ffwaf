@@ -36,7 +36,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	\
 	gluon-migrate-vpn \
-	gluon-switch2-l2tp-exp \
+	gluon-switch2exp \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images

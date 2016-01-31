@@ -19,7 +19,7 @@ PACKAGES_FFMUS_REPO=https://github.com/ffmus/ffwaf-packages.git
 #		the version/commit of the git repository to clone
 #PACKAGES_MY_OWN_PACKAGES_COMMIT=123456789aabcda1a69b04278e4d38f2a3f57e49
 PACKAGES_FFRL_COMMIT=a68ed8eddc17652e37687c518341ac6075376683
-PACKAGES_FFMUS_COMMIT=737dd9c03dc91c91c25daa59ac66c92009ad5655
+PACKAGES_FFMUS_COMMIT=2d9a2a4d8af04203f1a643c159e2faeba8c0fc25
 
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out

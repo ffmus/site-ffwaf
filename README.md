@@ -17,7 +17,7 @@ git clone https://github.com/freifunk-gluon/gluon gluon-latest
 cd gluon-latest
 git checkout master
 git pull
-git checkout df018ed7c7f33006565918bf7d4cc4caab631aee
+git checkout 54ed2a8d1407655f3ddeac5e0dd6c9e8b4d402fd
 ```
 
 Dann bauen:

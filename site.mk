@@ -7,7 +7,7 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
-	gluon-announced \
+	gluon-respondd \
 	gluon-neighbour-info \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
@@ -35,6 +35,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	\
 	gluon-migrate-vpn \
+	gluon-switch2latest \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images

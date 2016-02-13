@@ -7,7 +7,7 @@ nutzen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
 
-Siehe auch: http://gluon.readthedocs.org/en/latest/
+Siehe auch: http://gluon.readthedocs.org/en/v2016.1/
 
 Letzter erfolgreicher Build ging so:
 
@@ -17,7 +17,7 @@ git clone https://github.com/freifunk-gluon/gluon gluon-latest
 cd gluon-latest
 git checkout master
 git pull
-git checkout 54ed2a8d1407655f3ddeac5e0dd6c9e8b4d402fd
+git checkout tags/v2016.1
 ```
 
 Dann bauen:

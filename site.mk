@@ -36,6 +36,7 @@ GLUON_SITE_PACKAGES := \
 	\
 	gluon-migrate-vpn \
 	gluon-switch2latest \
+	gluon-cleanupmesh \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images

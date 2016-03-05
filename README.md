@@ -4,22 +4,22 @@ Community, alias Domäne-14 von Freifunk-Münsterland, zu bauen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
 
-Siehe auch: http://gluon.readthedocs.org/en/v2016.1/
+Siehe auch: http://gluon.readthedocs.org/en/v2016.1.1/
 
 Letzter erfolgreicher Build ging so:
 
 Zunächst gloun holen:
 ```
-git clone https://github.com/freifunk-gluon/gluon gluon-stable
-cd gluon-stable
+git clone https://github.com/freifunk-gluon/gluon gluon-experimental
+cd gluon-experimental
 git checkout master
 git pull
-git checkout tags/v2016.1
+git checkout tags/v2016.1.1
 ```
 
 Dann bauen:
 ```
-export GLUON_BRANCH=stable
+export GLUON_BRANCH=experimental
 export GLUON_SITEDIR=~/git/freifunk/ffmus/site-ffwaf
 
 make update

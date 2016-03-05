@@ -34,10 +34,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
-	gluon-migrate-vpn \
-	gluon-switch2stable \
-	gluon-cleanupmesh \
-	gluon-enable802 \
+	gluon-switch2exp \
+	gluon-disableibss \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -45,7 +43,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2016.1-1
+DEFAULT_GLUON_RELEASE := 2016.1.1-0.exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE

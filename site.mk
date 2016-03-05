@@ -35,7 +35,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	\
 	gluon-migrate-vpn \
-	gluon-switch2latest \
+	gluon-switch2stable \
 	gluon-cleanupmesh \
 
 ##	DEFAULT_GLUON_RELEASE

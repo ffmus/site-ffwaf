@@ -34,7 +34,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
-	gluon-switch2exp \
 	gluon-disableibss \
 
 ##	DEFAULT_GLUON_RELEASE
@@ -43,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2016.1.1-0.exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2016.1.1-1
 
 
 ##	GLUON_RELEASE

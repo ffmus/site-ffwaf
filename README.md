@@ -14,7 +14,7 @@ git clone https://github.com/freifunk-gluon/gluon gluon-experimental
 cd gluon-experimental
 git checkout master
 git pull
-git checkout tags/v2016.1.1
+git checkout tags/v2016.1.2
 ```
 
 Dann bauen:

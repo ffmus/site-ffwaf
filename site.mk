@@ -24,19 +24,17 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-wifi-config \
 	gluon-next-node \
 	gluon-mesh-vpn-tunneldigger \
+	gluon-tunneldigger-watchdog \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
-	haveged \
 	iptables \
 	iwinfo \
 	\
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
-	gluon-migrate-vpn \
-	gluon-switch2stable \
-	gluon-cleanupmesh \
+	gluon-switch2latest \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -44,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2016.1-0.1exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2016.1.4-1.exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE

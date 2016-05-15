@@ -1,13 +1,15 @@
 
 site.conf und site.mk um die Firmware für Freifunk-Knoten der Warendorfer
-Community zu bauen. Dieser Zweig ist höchst experimentel. Die Chancen das
-etwas nicht funktioniert, oder das etwas kaputt geht, sind recht hoch.
-Daher die ausdrückliche und dringende Empfehlung diesen Zweig *NICHT* zu
+Community, alias Domäne-14 von Freifunk-Münsterland, zu bauen.
+
+Dieser Zweig ist höchst experimentel. Die Chancen das etwas nicht
+funktioniert, oder das etwas kaputt geht, sind recht hoch. Daher die
+ausdrückliche und dringende Empfehlung diesen Zweig *NICHT* zu
 nutzen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
 
-Siehe auch: http://gluon.readthedocs.org/en/v2016.1/
+Siehe auch: http://gluon.readthedocs.org/en/v2016.1.4/
 
 Letzter erfolgreicher Build ging so:
 
@@ -17,7 +19,7 @@ git clone https://github.com/freifunk-gluon/gluon gluon-latest
 cd gluon-latest
 git checkout master
 git pull
-git checkout tags/v2016.1
+git checkout v2016.1.x
 ```
 
 Dann bauen:

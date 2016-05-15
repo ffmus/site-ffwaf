@@ -4,7 +4,7 @@ Community, alias Domäne-14 von Freifunk-Münsterland, zu bauen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
 
-Siehe auch: http://gluon.readthedocs.org/en/v2016.1.1/
+Siehe auch: http://gluon.readthedocs.org/en/v2016.1.4/
 
 Letzter erfolgreicher Build ging so:
 

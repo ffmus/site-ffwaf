@@ -34,7 +34,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
-	gluon-disableibss \
+	gluon-switch2stable \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -42,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2016.1.1-1
+DEFAULT_GLUON_RELEASE := 2016.1.4-2
 
 
 ##	GLUON_RELEASE
@@ -60,4 +60,4 @@ DEFAULT_GLUON_PRIORITY := 0
 GLUON_PRIORITY ?= $(DEFAULT_GLUON_PRIORITY)
 
 # Languages to include
-GLUON_LANGS ?= en de
+GLUON_LANGS ?= de en

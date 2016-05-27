@@ -42,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2016.1.4-2
+DEFAULT_GLUON_RELEASE := 2016.1.5-1
 
 
 ##	GLUON_RELEASE

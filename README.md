@@ -4,7 +4,7 @@ Community, alias Domäne-14 von Freifunk-Münsterland, zu bauen.
 
 Downloads finden sich unter http://images.freifunk-muensterland.net/
 
-Siehe auch: http://gluon.readthedocs.org/en/v2016.1.4/
+Siehe auch: http://gluon.readthedocs.org/en/v2016.1.5/
 
 Letzter erfolgreicher Build ging so:
 
@@ -14,7 +14,7 @@ git clone https://github.com/freifunk-gluon/gluon gluon-stable
 cd gluon-stable
 git checkout master
 git pull
-git checkout tags/v2016.1.4
+git checkout tags/v2016.1.5
 ```
 
 Dann bauen:
@@ -51,5 +51,5 @@ Für einen lokalen mirror (openwrt bietet das nicht in ipv6 an) etwa folgendes
 ausführen (Muss man nur einmal machen):
 
 ```
-wget -N -r -l inf -p -np -k https://downloads.openwrt.org/chaos_calmer/15.05/ar71xx/generic/packages/
+wget -N -r -l inf -p -np -k https://downloads.openwrt.org/chaos_calmer/15.05.1/ar71xx/generic/packages/
 ```

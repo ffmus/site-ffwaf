@@ -34,7 +34,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	\
-	gluon-switch2exp \
+	gluon-switch2stable \
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images

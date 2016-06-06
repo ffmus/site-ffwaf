@@ -43,8 +43,8 @@ contrib/sign.sh ../secret output/images/sysupgrade/${GLUON_BRANCH}.manifest
 Auf dem Server bringen:
 
 ```
-( cd output/images && rsync -rav --del . images.freifunk-muensterland.net:/var/www/images/${GLUON_BRANCH} )
-( cd output/modules && rsync -rav . images.freifunk-muensterland.net:/var/www/images/modules )
+( cd output/images && rsync -rav --del . firmware.freifunk-muensterland.org:/var/www/html/domaene14/${GLUON_BRANCH} )
+( cd output/modules && rsync -rav . firmware.freifunk-muensterland.org:/var/www/html/domaene14/modules )
 ```
 
 Für einen lokalen mirror (openwrt bietet das nicht in ipv6 an) etwa folgendes
